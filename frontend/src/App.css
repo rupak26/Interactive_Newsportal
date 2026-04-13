@@ -1,0 +1,31 @@
+/* ── Loading ── */
+.loading-screen {
+  height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 16px; color: var(--primary); font-size: 1.1rem;
+}
+.spinner {
+  width: 42px; height: 42px;
+  border: 3px solid var(--primary-light);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.error-msg { color: var(--danger); font-size: 1rem; }
+
+/* ── Shell ── */
+.app-shell { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* ── Body layout ── */
+.app-body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  flex: 1;
+  height: calc(100vh - var(--header-h));
+}
+
+@media (max-width: 768px) {
+  .app-body { grid-template-columns: 1fr; }
+}

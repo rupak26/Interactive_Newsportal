@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --primary:       #4338ca;
+  --primary-dark:  #312e81;
+  --primary-light: #e0e7ff;
+  --accent:        #f59e0b;
+  --surface:       #ffffff;
+  --bg:            #f0f2f8;
+  --text-main:     #1e1b4b;
+  --text-muted:    #6b7280;
+  --border:        #e2e8f0;
+  --danger:        #e74c3c;
+  --shadow:        0 4px 24px rgba(67,56,202,.10);
+  --radius:        14px;
+  --header-h:      68px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  min-height: 100vh;
+}
